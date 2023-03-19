@@ -5,7 +5,7 @@ const ListSlideBarSubmenu = (props) => {
   return (
     <li >
       <Link
-        to={"/home" + props.linkItem}
+        to={props.linkItem}
         className=" text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5
                    rounded-md"
       >

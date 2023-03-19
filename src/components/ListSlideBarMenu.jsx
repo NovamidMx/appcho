@@ -14,7 +14,7 @@ const ListSlideBar = (props) => {
         }}
       >
         <Link
-          to={"/home" + props.link}
+          to={props.link}
           className={` text-sm flex items-center gap-x-4 cursor-pointer p-2
  rounded-md ${props.spaceT ? "mt-2" : "mt-1"}`}
         >

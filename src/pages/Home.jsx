@@ -16,7 +16,7 @@ const Home = () => {
   const Menus = [
     {
       name: "Perfil",
-      link: "/",
+      link: "#",
       icon: CgProfile,
       spaceT: true,
       divider: false,
@@ -25,28 +25,28 @@ const Home = () => {
       submenuItems: [
         {
           nameItem: "Datos personales",
-          linkItem: "",
+          linkItem: "#",
           iconSubmenuItem: FaRegAddressCard,
         },
         {
           nameItem: "Configuración",
-          linkItem: "/",
+          linkItem: "#",
           iconSubmenuItem: RiSettings4Line,
         },
       ],
     },
     {
       name: "Dashboard",
-      link: "/",
+      link: "#",
       icon: MdOutlineDashboard,
       spaceT: true,
       divider: true,
     },
-    { name: "Usuarios", link: "/users", icon: AiOutlineUser },
-    { name: "Clientes", link: "/clients", icon: AiOutlineUser },
+    { name: "Usuarios", link: "/home/users", icon: AiOutlineUser },
+    { name: "Clientes", link: "/home/clients", icon: AiOutlineUser },
     {
       name: "Expedientes",
-      link: "/",
+      link: "/home/file",
       icon: RiFoldersLine,
       divider: true,
       submenu: false,
@@ -54,18 +54,18 @@ const Home = () => {
     },
     {
       name: "Calendario",
-      link: "/calendar",
+      link: "/home/calendar",
       icon: TbReportAnalytics,
     },
     {
       name: "Configuración",
-      link: "/",
+      link: "#",
       icon: RiSettings4Line,
       submenu: true,
       gapItem: true,
       submenuItems: [
-        { nameItem: "Vista", linkItem: "/", iconSubmenuItem: AiFillFolderOpen },
-        { nameItem: "Tema", linkItem: "/", iconSubmenuItem: AiFillFolderOpen },
+        { nameItem: "Vista", linkItem: "#", iconSubmenuItem: AiFillFolderOpen },
+        { nameItem: "Tema", linkItem: "#", iconSubmenuItem: AiFillFolderOpen },
       ],
     },
   ];
@@ -74,7 +74,7 @@ const Home = () => {
       <div className="flex">
         <div className="drawer drawer-mobile bg-base-100">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content flex flex-col bg-slate-300">
+          <div className="drawer-content flex flex-col bg-slate-300 h-screen overflow-y-scroll">
 
             {/* NavbarTOP Mobile */}
             <div className="navbar bg-base-100 lg:hidden">
